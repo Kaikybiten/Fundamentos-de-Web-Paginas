@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+	
+<html>
+	<head>
+		<title> Fale Conosco </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	<body>
+		<nav>
+			<a href="Pagina_01.html"> Voltar </a>
+			<hr/>
+		</nav>		
+
+		<form action="#" method=post>
+		<table align="center" border="1px">
+			<thead>
+				<tr>
+					<th colspan="4"> Formulário Para Contato </th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<th> <label for="nome"> Nome </label> </th>
+					<th width = 150> <label for="nascimento"> Data de Nascimento </label> </th>
+					<th> <label for="genero"> Gênero </label> </th>
+				</tr>
+				<tr>
+					<td> <input type="text" required id="nome" name="nome"> </td>
+					<td align="center"> <input type="date" required id="nascimento" name="nascimento"> </td>
+					<td align="center">
+						<select id="genero" name="genero">
+    							<option value="masculino">Masculino</option>
+    							<option value="feminino">Feminino</option>
+    							<option value="nao_binario">Não Binario</option>
+    							<option value="outro">Outro</option>
+   							<option value="abster">Prefiro não informar</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th> <label for="email"> Email </label> </th>
+					<th> <label for="telefone"> Telefone </label> </th>
+					<th> <label for="profissao"> Profissão </label> </th>
+ 				</tr>
+				<tr>
+					<td> <input type="email" required id="email" name="email"> </td>
+					<td> <input type="tel" required id="telefone" name="telefone" pattern="[0-9]+"> </td>
+					<td> <input type="text" id="profissao" name="profissao"> </td>
+				</tr>
+				<tr>
+					<th colspan="3"> <label for="mensagem"> Transcreva a sua mensagem </label> </th> 
+				</tr>
+				<tr>
+					<td colspan="3"> <textarea required id="mensagem" name="mensagem" rows="7" cols="71"></textarea> </td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3" align="right">
+						<input type="submit" value="Enviar">
+    						<input type="reset" value="Limpar">
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		</form>
+	</body>
+</html>
