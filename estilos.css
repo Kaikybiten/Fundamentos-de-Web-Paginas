@@ -1,0 +1,59 @@
+/* Estilos de CSS */
+
+video 
+{
+	width: 750px;
+	height: 300px;	
+}
+
+body
+{
+	font-family: Helvetica;
+}
+
+a:link 
+{
+  	color: #4169E1;
+}
+
+a:visited
+{
+  	color: #4169E1;
+}
+
+a:hover
+{
+  	color: #0000FF;
+}
+
+a:active
+{
+  	color: #ADD8E6;
+}
+
+table
+{
+	
+	border: none;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+thead
+{
+	font-size: 25px;
+	font-size: 25px;
+    	padding-bottom: 10px;
+}
+
+th
+{
+	background-color: #AEC6CF;
+	border-color: #AEC6CF;
+}
+	
+textarea
+{
+	width: 538px;
+	height: 125px;
+}
