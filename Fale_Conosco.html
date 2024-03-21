@@ -5,32 +5,33 @@
 		<title> Fale Conosco </title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="estilos.css">
 	</head>
 	
-	<body>
+	<body class="tabela">
 		<nav>
 			<a href="Pagina_01.html"> Voltar </a>
 			<hr/>
 		</nav>		
 
 		<form action="#" method=post>
-		<table align="center" border="1px">
+		<table>
 			<thead>
 				<tr>
-					<th colspan="4"> Formulário Para Contato </th>
+					<th colspan="3"> Formulário Para Contato </th>
 				</tr>
 			</thead>
 
 			<tbody>
 				<tr>
 					<th> <label for="nome"> Nome </label> </th>
-					<th width = 150> <label for="nascimento"> Data de Nascimento </label> </th>
+					<th> <label for="nascimento"> Data de Nascimento </label> </th>
 					<th> <label for="genero"> Gênero </label> </th>
 				</tr>
 				<tr>
 					<td> <input type="text" required id="nome" name="nome"> </td>
-					<td align="center"> <input type="date" required id="nascimento" name="nascimento"> </td>
-					<td align="center">
+					<td> <input type="date" required id="nascimento" name="nascimento"> </td>
+					<td>
 						<select id="genero" name="genero">
     							<option value="masculino">Masculino</option>
     							<option value="feminino">Feminino</option>
@@ -54,12 +55,12 @@
 					<th colspan="3"> <label for="mensagem"> Transcreva a sua mensagem </label> </th> 
 				</tr>
 				<tr>
-					<td colspan="3"> <textarea required id="mensagem" name="mensagem" rows="7" cols="71"></textarea> </td>
+					<td colspan="3"> <textarea required id="mensagem" name="mensagem"></textarea> </td>
 				</tr>
 			</tbody>
 			<tfoot>
 				<tr>
-					<td colspan="3" align="right">
+					<td>
 						<input type="submit" value="Enviar">
     						<input type="reset" value="Limpar">
 					</td>
