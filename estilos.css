@@ -1,5 +1,4 @@
 /* Estilos de CSS */
-
 header 
 {
     background-color: #333;
@@ -17,44 +16,9 @@ body
 	font-family: Arial, sans-serif;
     margin: 5;
     padding: 5;
-	font-size:  16px;
+	font-size:  1em;
 	line-height: 1.5;
     background-color: #fff;
-}
-
-#col1
-{
-	float: left;
-	width: 32%;
-	margin-right: 2%;
-}
-#col2
-{
-	float: left;
-	width: 32%;
-	margin-right: 2%;
-}
-#col3
-{
-	float: left;
-	width: 32%;
-}
-#col4
-{
-	float: right;
-	width: 32%;
-	margin-top: 10px;
-}
-video 
-{
-	margin-top: 10px;
-	position: relative;
-	left: 30px;
-	float: left;
-	width: 750px;
-	height: 350px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	cursor: pointer;
 }
 
 a
@@ -83,11 +47,6 @@ a:active
   	color: #ADD8E6;
 }
 
-img
-{
-	border-radius: 8px;
-}
-
 hr
 {
 	border-color: #ccc;
@@ -97,24 +56,12 @@ hr
 {
 	background-image: url(background.jpg);
 	background-size: cover;
-}
-
-table
-{
-    margin: auto;
-	text-align: center;
-	border-collapse: collapse;
-    background-color: #fff;
-    padding: 20px;
-   	border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	position: relative;
-	top: 50px;
+	background-repeat: no-repeat;
 }
 
 thead
 {
-	font-size: 25px;
+	font-size: 2em;
     padding-bottom: 10px;
 }
 
@@ -151,4 +98,112 @@ input[type="submit"], input[type="reset"]
 footer
 {
 	clear: both;
+}
+
+/*MEDIA QUERYS */
+@media screen and (min-width: 240px)
+{
+	.homem_ti
+	{
+		width: 400px;
+		height: auto;
+		position: static;
+	}
+	section
+	{
+		float: none;
+	}
+	video
+	{
+		margin-top: 10px;
+		position: static;
+		left: 10px;
+		float: none;
+		width: 100%;
+		height: auto;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		cursor: pointer;
+	}
+	.programacao
+	{
+		width: 100%;
+		border-radius: 8px;
+		box-shadow: 0 0 5px #000000;
+	}
+	table
+	{
+		margin: auto;
+		text-align: center;
+		border-collapse: collapse;
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		position: relative;
+		top: 50px;
+		width: 240px;
+	}
+}
+@media screen and (min-width: 1200px) 
+{
+	.homem_ti
+	{
+		width: 400px;
+		height: auto;
+		position: absolute;
+		right: 100px;
+	}	
+	#col1
+	{
+		float: left;
+		width: 32%;
+		margin-right: 2%;
+	}
+	#col2
+	{
+		float: left;
+		width: 32%;
+		margin-right: 2%;
+	}
+	#col3
+	{
+		float: left;
+		width: 32%;
+	}
+	#col4
+	{
+		float: right;
+		width: 32%;
+		margin-top: 10px;
+	}
+	video 
+	{
+		margin-top: 10px;
+		position: relative;
+		left: 70px;
+		float: left;
+		width: 750px;
+		height: 350px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		cursor: pointer;
+	}
+	.programacao
+	{
+		width: 80%;
+		border-radius: 8px;
+		box-shadow: 0 0 5px #000000;
+	}
+	table
+	{
+		margin: auto;
+		text-align: center;
+		border-collapse: collapse;
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		position: relative;
+		top: 50px;
+		width: 240px;
+	}
 }
