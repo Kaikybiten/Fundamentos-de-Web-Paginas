@@ -6,13 +6,15 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="estilos.css">
+		<script src="Dados_Roda_Pé.js"></script>
 	</head>
 	
 	<body class="tabela">
-		<nav>
-			<a href="Pagina_01.html" rel="prev"> Voltar </a>
-			<hr/>
-		</nav>		
+		<div>
+			<nav>
+				<a href="Pagina_01.html" rel="prev"> Voltar </a> 
+			</nav>		
+		</div>
 
 		<form action="#" method=post>
 		<table>
@@ -68,5 +70,18 @@
 			</tfoot>
 		</table>
 		</form>
+		<footer>
+			<div class="dados">
+				<script>
+					document.write(varNomeCompleto, "<br>");
+					document.write("ano - ", varAnoCorrente, "<br>");
+					document.write("Twitter: ", varTwitter, "<br>");
+					document.write("Facebook: ", varFacebook, "<br>");
+					document.write("Instagram: ", varInstagram, "<br>");
+					document.write("Sexo: ", varSexo, "<br>");
+					document.write("Localização - Polo: ", varPolo, "<br>");
+				</script>
+			</div>
+		</footer>
 	</body>
 </html>
